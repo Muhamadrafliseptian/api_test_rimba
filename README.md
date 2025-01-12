@@ -23,8 +23,11 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+API sederhana ini dibangun menggunakan Node.js dan framework Nest.js dengan fitur utama berupa CRUD (Create, Read, Update, Delete) untuk entitas User. Setiap User akan memiliki atribut yang terdiri dari id berupa UUID sebagai identitas unik pengguna, name berupa string untuk menyimpan nama pengguna, email yang berupa string dan harus bersifat unik dengan validasi format email yang benar, serta age yang berupa angka untuk merepresentasikan usia pengguna. Data pengguna akan disimpan dalam database mysql.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Setiap permintaan yang masuk ke dalam API akan melewati proses validasi input menggunakan middleware agar data yang diterima sesuai dengan kriteria yang ditentukan sebelum diproses lebih lanjut. Selain itu, setiap request yang diterima akan dicatat dalam sistem logging untuk memudahkan proses monitoring dan analisis performa API.
+
+Untuk memastikan keandalan dan kualitas dari API yang dibangun, saya melakukan pengujian menggunakan framework jest. Pengujian ini mencakup unit testing agar setiap fungsi dalam API dapat beroperasi dengan benar sesuai dengan spesifikasi yang diharapkan.
 
 ## Project setup
 
@@ -36,9 +39,6 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
-
-# watch mode
 $ npm run start:dev
 
 # production mode
