@@ -34,6 +34,8 @@ Untuk memastikan keandalan dan kualitas dari API yang dibangun, saya melakukan p
 ```bash
 $ npm install
 ```
+## Import Database "db_rimba_test.sql"
+lakukan import database mysql ke phpmyadmin
 
 ## Compile and run the project
 
@@ -43,6 +45,7 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
 ```
 
 ## Run tests
